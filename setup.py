@@ -1,12 +1,15 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from distutils.core import setup
 
 setup(
-    name='tasfers',
-    version='1.0',
+    name='Tasfers',
+    version='1.0.5',
     packages=find_packages(),
     install_requires=[
-        'aiofiles'
+        'aiofiles',
+        "cryptography==42.0.4"
     ],
     author='Towa',
-    description='A library to simplify programming'
+    description='A library to simplify programming',
+    url='https://github.com/Tasfers/library'
 )
